@@ -1,0 +1,633 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"Trabant",
+		"CSJMisc"
+	};
+	addOnsAuto[]=
+	{
+		"CSJMisc",
+		"Trabant"
+	};
+	randomSeed=3414019;
+	class Intel
+	{
+	};
+	class Groups
+	{
+		items=30;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6616.431641,151.935425,6026.643555};
+					id=0;
+					side="WEST";
+					vehicle="SoldierWSniper";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+		class Item1
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6624.745117,150.524216,6049.122559};
+					placement=30.000000;
+					id=2;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6483.474121,233.450256,6340.370117};
+					id=3;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_1";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6700.402832,169.395401,6402.241211};
+					id=4;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_2";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6823.293945,123.727470,6184.177246};
+					id=5;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1";
+				};
+			};
+		};
+		class Item5
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6704.945801,138.278488,6145.540039};
+					id=6;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_3";
+				};
+			};
+		};
+		class Item6
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6828.780273,122.003670,5998.752441};
+					id=7;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_4";
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6506.367676,185.865082,5917.148438};
+					id=8;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_5";
+				};
+			};
+		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6326.671387,250.619080,6066.515625};
+					id=9;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_6";
+				};
+			};
+		};
+		class Item9
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6517.720215,178.755539,6116.629883};
+					id=10;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_7";
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6190.907227,316.477722,6187.901855};
+					id=11;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_8";
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6653.317383,162.215042,5919.042480};
+					id=12;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.200000;
+					text="gl1_9";
+				};
+			};
+		};
+		class Item12
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6629.793457,157.628326,6155.932617};
+					placement=30.000000;
+					id=13;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item13
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6798.446777,127.034996,6085.450684};
+					placement=30.000000;
+					id=14;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item14
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6732.999512,145.196259,5947.003906};
+					placement=30.000000;
+					id=15;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item15
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6571.897461,175.368683,5886.591309};
+					placement=30.000000;
+					id=16;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item16
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6486.312988,183.869980,5997.348145};
+					placement=30.000000;
+					id=17;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item17
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6561.828613,160.714127,6075.381836};
+					placement=30.000000;
+					id=18;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item18
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6707.827148,159.844513,5886.591309};
+					placement=30.000000;
+					id=19;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item19
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6705.310059,135.632919,6072.864746};
+					placement=30.000000;
+					id=20;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item20
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6604.211914,163.138290,5951.570801};
+					placement=30.000000;
+					id=21;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item21
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6549.769043,159.259781,5981.425781};
+					placement=30.000000;
+					id=22;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item22
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6544.500977,177.717621,5912.934082};
+					placement=30.000000;
+					id=23;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item23
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6586.649902,169.149765,5919.958984};
+					placement=30.000000;
+					id=24;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item24
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6567.331543,171.392319,5926.983398};
+					placement=30.000000;
+					id=25;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item25
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6505.864258,174.953476,6018.305664};
+					placement=30.000000;
+					id=26;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item26
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6523.426270,166.001022,6004.256348};
+					placement=30.000000;
+					id=27;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item27
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6600.699219,165.202225,6179.876465};
+					placement=30.000000;
+					id=28;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item28
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6586.649902,166.600632,6155.289063};
+					placement=30.000000;
+					id=29;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+		class Item29
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6732.414063,134.500870,6146.508301};
+					placement=30.000000;
+					id=30;
+					side="CIV";
+					vehicle="CSJrabbit";
+					leader=1;
+					skill=0.200000;
+					ammo=0.000000;
+					init="this exec ""rabbitRun.sqs""";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={6623.308105,151.923050,6020.825195};
+			id=1;
+			side="EMPTY";
+			vehicle="Trabant";
+			skill=0.600000;
+		};
+	};
+};
+class Intro
+{
+	randomSeed=2326019;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=16418819;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=14504963;
+	class Intel
+	{
+	};
+};

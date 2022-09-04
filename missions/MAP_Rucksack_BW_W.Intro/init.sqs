@@ -1,0 +1,12 @@
+;Script by BadAss
+;www.mapfact.net
+;www.mapfact.net/forum
+;contact: christianpompsch@web.de
+;-------------------------------------------------------------
+"_x removeMagazines {Handgrenade}" foreach [ap,b2,b3,b4,b5,b6]
+"_x addWeapon {MAP_RucksackBW}" foreach [ap,b2,b3,b4,b5,b6]
+
+~1
+[] exec "\MAP_Rucksack\Scripts\MAP_RuckInit.sqs"
+{_x addEventHandler ["fired",{if (_this select 1 in MAP_RuckSackTypes) then {_this exec "\MAP_Rucksack\Scripts\MAP_DropMag.sqs"};}]} foreach [ap,b2,b3,b4,b5,b6]
+EXIT

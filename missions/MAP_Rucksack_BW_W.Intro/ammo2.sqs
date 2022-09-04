@@ -1,0 +1,28 @@
+;Script by BadAss 
+;www.mapfact.net 
+;www.mapfact.net/forum 
+;contact: christianpompsch@web.de 
+;------------------------------------------------------------- 
+
+_crate = _this select 0 
+
+clearWeaponCargo _crate 
+clearMagazineCargo _crate 
+
+_crate AddWeaponCargo ["BWMOD_P8",6] 
+_crate AddWeaponCargo ["BWMOD_MG3",6] 
+_crate AddWeaponCargo ["BWMOD_G22",6] 
+_crate AddWeaponCargo ["BWMOD_PzFst3",6] 
+_crate AddWeaponCargo ["G36a",6] 
+_crate AddWeaponCargo ["MAP_radio",6] 
+
+_crate AddMagazineCargo ["MAP_BWMOD_P8Mag_PDM",20] 
+_crate AddMagazineCargo ["MAP_G36_PDM",20] 
+_crate AddMagazineCargo ["MAP_BWMOD_G36SDMag_PDM",20] 
+_crate AddMagazineCargo ["MAP_BWMOD_MG3Mag_PDM",20] 
+_crate AddMagazineCargo ["MAP_BWMOD_G22Mag_PDM",20] 
+_crate AddMagazineCargo ["MAP_BWMOD_PzFst3_R_PDM",20] 
+_crate AddMagazineCargo ["MAP_Radio_PDM",20] 
+_crate AddMagazineCargo ["MAP_Handgrenade_PDM",20] 
+
+EXIT

@@ -1,0 +1,10 @@
+#include <MAP_Rucksack\Radio.h>
+
+//=====================================================================================
+class CfgSounds
+{
+sounds[] = {};
+
+	class rauschen1		{name = "Rauschen1";sound[] = {"rauschen1.ogg", 1, 1.0};titles[] = {};};
+	class rauschen2		{name = "Rauschen2";sound[] = {"rauschen2.ogg", 1, 1.0};titles[] = {};};
+};

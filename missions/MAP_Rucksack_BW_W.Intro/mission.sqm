@@ -1,0 +1,254 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"map_ruck",
+		"BWMod"
+	};
+	addOnsAuto[]=
+	{
+		"BWMod",
+		"map_ruck"
+	};
+	randomSeed=11022851;
+	class Intel
+	{
+		briefingName="MAP_Ruck_Test";
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9672.135742,29.834999,3647.511475};
+					azimut=180.000000;
+					id=9;
+					side="WEST";
+					vehicle="BWMOD_Officer";
+					player="PLAY CDG";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.600000;
+					text="b4";
+				};
+				class Item1
+				{
+					position[]={9667.244141,29.834999,3652.403564};
+					azimut=180.000000;
+					id=10;
+					side="WEST";
+					vehicle="BWMOD_Soldier";
+					player="PLAY CDG";
+					skill=0.600000;
+					text="b5";
+				};
+				class Item2
+				{
+					position[]={9677.800781,29.834999,3653.948242};
+					azimut=180.000000;
+					id=11;
+					side="WEST";
+					vehicle="BWMOD_Soldier";
+					player="PLAY CDG";
+					skill=0.600000;
+					text="b6";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=3;
+				class Item0
+				{
+					position[]={9676.945313,29.834999,3614.888916};
+					azimut=-14.153758;
+					id=12;
+					side="WEST";
+					vehicle="BWMOD_Officer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CORPORAL";
+					skill=0.600000;
+					text="ap";
+				};
+				class Item1
+				{
+					position[]={9673.962891,29.834999,3610.920410};
+					azimut=-14.153758;
+					id=13;
+					side="WEST";
+					vehicle="BWMOD_Soldier";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.600000;
+					text="b2";
+				};
+				class Item2
+				{
+					position[]={9681.518555,29.834999,3611.497803};
+					azimut=-14.153758;
+					id=14;
+					side="WEST";
+					vehicle="BWMOD_Soldier";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.600000;
+					text="b3";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9598.159180,29.834999,3674.254639};
+					id=16;
+					side="LOGIC";
+					vehicle="BWMOD_Server";
+					leader=1;
+					skill=0.600000;
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=11;
+		class Item0
+		{
+			position[]={9678.966797,29.834999,3632.848389};
+			azimut=185.000000;
+			id=0;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			skill=0.600000;
+			init="[this] exec ""ammo1.sqs""";
+		};
+		class Item1
+		{
+			position[]={9646.106445,29.834999,3641.201660};
+			azimut=175.000000;
+			id=1;
+			side="EMPTY";
+			vehicle="MAP_TentA";
+			skill=0.600000;
+		};
+		class Item2
+		{
+			position[]={9709.179688,29.834999,3640.497559};
+			azimut=270.000000;
+			id=2;
+			side="EMPTY";
+			vehicle="MAP_Position";
+			skill=0.600000;
+		};
+		class Item3
+		{
+			position[]={9709.584961,29.834999,3633.331787};
+			azimut=270.000000;
+			id=3;
+			side="EMPTY";
+			vehicle="MAP_Position";
+			skill=0.600000;
+		};
+		class Item4
+		{
+			position[]={9710.437500,29.834999,3626.752441};
+			azimut=270.000000;
+			id=4;
+			side="EMPTY";
+			vehicle="MAP_Position";
+			skill=0.600000;
+		};
+		class Item5
+		{
+			position[]={9698.079102,29.834999,3636.104004};
+			azimut=185.000000;
+			id=5;
+			side="EMPTY";
+			vehicle="MAP_RuckBoxEquip";
+			skill=0.600000;
+		};
+		class Item6
+		{
+			position[]={9639.719727,29.834999,3636.266602};
+			azimut=175.000000;
+			id=6;
+			side="EMPTY";
+			vehicle="MAP_TentA";
+			skill=0.600000;
+		};
+		class Item7
+		{
+			position[]={9650.040039,29.834999,3619.539063};
+			azimut=25.000000;
+			id=7;
+			side="EMPTY";
+			vehicle="Truck5t";
+			skill=0.600000;
+		};
+		class Item8
+		{
+			position[]={9697.759766,29.834999,3651.021240};
+			azimut=205.000000;
+			id=8;
+			side="EMPTY";
+			vehicle="Jeep";
+			skill=0.600000;
+		};
+		class Item9
+		{
+			position[]={9698.393555,29.834999,3628.609375};
+			azimut=185.000000;
+			id=15;
+			side="EMPTY";
+			vehicle="MAP_RuckBoxBWMOD";
+			skill=0.600000;
+		};
+		class Item10
+		{
+			position[]={9665.588867,29.834999,3632.142822};
+			azimut=185.000000;
+			id=17;
+			side="EMPTY";
+			vehicle="ReammoBoxWest";
+			skill=0.600000;
+			init="[this] exec ""ammo2.sqs""";
+		};
+	};
+};
+class Intro
+{
+	randomSeed=11770883;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	randomSeed=14720003;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	randomSeed=3693571;
+	class Intel
+	{
+	};
+};
