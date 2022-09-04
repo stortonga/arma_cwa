@@ -1,1 +1,1 @@
-# arma_cwa
+Custom mission development for ArmA: Cold War Assault
