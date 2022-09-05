@@ -48,7 +48,7 @@ class Mission
 					id=55;
 					side="EAST";
 					vehicle="SSB_COY_CMD";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.600000;
 				};
@@ -62,7 +62,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5653.742676,48.374996,1143.018433};
+					position[]={5593.146484,49.619865,1156.075195};
 					id=56;
 					side="EAST";
 					vehicle="SSB_Schutze1";
