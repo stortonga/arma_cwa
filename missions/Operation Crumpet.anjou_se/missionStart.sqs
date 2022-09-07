@@ -1,0 +1,11 @@
+; Make sure SS patrols will notice react to units again...
+
+villersSSpatrolN1 setBehaviour "safe";
+villersSSpatrolN1 setSpeedMode "limited";
+villersSSpatrolN2 setBehaviour "safe";
+villersSSpatrolN2 setSpeedMode "limited";
+villersSSpatrolS1 setBehaviour "safe";
+villersSSpatrolS1 setSpeedMode "limited";
+villersSSpatrolS2 setBehaviour "safe";
+villersSSpatrolS2 setSpeedMode "limited";
+villersMG42Gunner setBehaviour "safe";

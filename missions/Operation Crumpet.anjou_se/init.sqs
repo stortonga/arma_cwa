@@ -1,1 +1,2 @@
-player addaction ["(Hand-Signals)","\GENB_HS_core\coop\signal.sqs"]
+player addaction ["(Hand-Signals)","\GENB_HS_core\coop\signal.sqs"];
+[] exec "missionPresets.sqs";

@@ -1,0 +1,11 @@
+; Make sure no one gets alerted to early by the c47 and the paradrop...
+
+villersSSpatrolN1 setBehaviour "careless";
+villersSSpatrolN1 setSpeedMode "limited";
+villersSSpatrolN2 setBehaviour "careless";
+villersSSpatrolN2 setSpeedMode "limited";
+villersSSpatrolS1 setBehaviour "careless"
+villersSSpatrolS1 setSpeedMode "limited";
+villersSSpatrolS2 setBehaviour "careless"
+villersSSpatrolS2 setSpeedMode "limited";
+villersMG42Gunner setBehaviour "careless";

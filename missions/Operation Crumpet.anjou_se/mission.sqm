@@ -28,16 +28,16 @@ class Mission
 	{
 		briefingName="Operation Crumpet";
 		startWeather=0.749925;
-		startFog=0.187094;
-		forecastWeather=0.750025;
-		forecastFog=0.625262;
+		startFog=0.499700;
+		forecastWeather=0.937619;
+		forecastFog=0.875387;
 		month=10;
-		hour=11;
+		hour=18;
 		minute=0;
 	};
 	class Groups
 	{
-		items=12;
+		items=8;
 		class Item0
 		{
 			side="EAST";
@@ -46,13 +46,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5679.064453,48.374996,1152.626587};
-					azimut=260.000000;
+					position[]={5593.146484,49.619865,1156.075195};
 					id=54;
 					side="EAST";
-					vehicle="SSB_COY_CMD";
+					vehicle="SSB_Schutze1";
 					leader=1;
 					skill=0.600000;
+					text="villersMG42Gunner";
+					init="villersMG42Gunner MoveInGunner villersMG42;";
 				};
 			};
 		};
@@ -64,34 +65,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5593.146484,49.619865,1156.075195};
+					position[]={5665.528809,48.374996,1151.645020};
+					azimut=345.000000;
 					id=55;
 					side="EAST";
 					vehicle="SSB_Schutze1";
 					leader=1;
 					skill=0.600000;
-					text="villersMG42Gunner";
-					init="VillersMG42Gunner MoveInGunner villersMG42;";
-				};
-			};
-		};
-		class Item2
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5665.528809,48.374996,1151.645020};
-					azimut=345.000000;
-					id=56;
-					side="EAST";
-					vehicle="SSB_Schutze1";
-					leader=1;
-					skill=0.600000;
 					text="villersSSpatrolN1";
-					init="villersSSpatrolN1 setBehaviour ""safe""; villersSSpatrolN1 SetSpeedMode ""limited"";";
 				};
 			};
 			class Waypoints
@@ -133,7 +114,7 @@ class Mission
 				};
 			};
 		};
-		class Item3
+		class Item2
 		{
 			side="EAST";
 			class Vehicles
@@ -143,13 +124,12 @@ class Mission
 				{
 					position[]={5665.959961,48.374996,1149.439575};
 					azimut=165.000000;
-					id=57;
+					id=56;
 					side="EAST";
 					vehicle="SSB_Schutze1";
 					leader=1;
 					skill=0.600000;
 					text="villersSSpatrolS1";
-					init="villersSSpatrolS1 setBehaviour ""safe""; villersSSpatrolS1 SetSpeedMode ""limited"";";
 				};
 			};
 			class Waypoints
@@ -206,7 +186,7 @@ class Mission
 				};
 			};
 		};
-		class Item4
+		class Item3
 		{
 			side="EAST";
 			class Vehicles
@@ -216,13 +196,12 @@ class Mission
 				{
 					position[]={5609.226563,48.558479,1146.593018};
 					azimut=165.000000;
-					id=58;
+					id=57;
 					side="EAST";
 					vehicle="SSB_Schutze3";
 					leader=1;
 					skill=0.600000;
 					text="villersSSpatrolS2";
-					init="villersSSpatrolS2 setBehaviour ""safe""; villersSSpatrolS2 SetSpeedMode ""limited"";";
 				};
 			};
 			class Waypoints
@@ -279,7 +258,7 @@ class Mission
 				};
 			};
 		};
-		class Item5
+		class Item4
 		{
 			side="EAST";
 			class Vehicles
@@ -289,13 +268,12 @@ class Mission
 				{
 					position[]={5602.909180,48.524017,1165.367432};
 					azimut=70.000000;
-					id=59;
+					id=58;
 					side="EAST";
 					vehicle="SSB_Schutze3";
 					leader=1;
 					skill=0.600000;
 					text="villersSSpatrolN2";
-					init="villersSSpatrolN2 setBehaviour ""safe""; villersSSpatrolN2 SetSpeedMode ""limited"";";
 				};
 			};
 			class Waypoints
@@ -336,45 +314,7 @@ class Mission
 				};
 			};
 		};
-		class Item6
-		{
-			side="EAST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={5678.729980,48.374996,1154.481812};
-					azimut=260.000000;
-					id=62;
-					side="EAST";
-					vehicle="SSB_COY_CMD";
-					player="PLAY CDG";
-					leader=1;
-					skill=0.600000;
-				};
-			};
-		};
-		class Item7
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={10212.976563,9.990000,2301.361816};
-					id=65;
-					side="WEST";
-					vehicle="reddevOf";
-					leader=1;
-					skill=0.600000;
-					text="Jeff";
-					init="Jeff moveInCargo c47;";
-				};
-			};
-		};
-		class Item8
+		class Item5
 		{
 			side="CIV";
 			class Vehicles
@@ -383,7 +323,7 @@ class Mission
 				class Item0
 				{
 					position[]={3025.635986,140.804993,2488.877930};
-					id=66;
+					id=63;
 					side="CIV";
 					vehicle="fdf_ww2_finMan6";
 					leader=1;
@@ -394,12 +334,11 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=7;
+				items=6;
 				class Item0
 				{
 					position[]={3025.635986,140.804993,2488.877930};
-					id=66;
-					speed="LIMITED";
+					id=63;
 					combat="SAFE";
 					expCond="SOEseesC47";
 					class Effects
@@ -409,8 +348,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5039.020020,101.593559,2519.941650};
-					expCond="";
+					position[]={5334.045410,105.260513,2538.575195};
 					class Effects
 					{
 					};
@@ -418,7 +356,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={5334.045410,105.260513,2538.575195};
+					position[]={5590.898438,71.465469,1855.163574};
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -426,15 +365,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={5590.898438,71.465469,1855.163574};
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item4
-				{
 					position[]={5382.052734,78.565376,1854.573364};
+					speed="LIMITED";
 					combat="STEALTH";
 					expActiv="SOEAgentBike action [""LIGHT OFF""];";
 					class Effects
@@ -442,7 +374,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item4
 				{
 					position[]={5381.729980,78.615662,1849.821045};
 					type="GETOUT";
@@ -451,12 +383,12 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item6
+				class Item5
 				{
 					position[]={5382.381836,78.576538,1840.091553};
 					speed="LIMITED";
 					combat="SAFE";
-					expActiv="SOEAgent DoMove GetPos Jack;";
+					expActiv="SOEAgent DoMove GetPos paraTeamLeader;";
 					class Effects
 					{
 					};
@@ -464,42 +396,34 @@ class Mission
 				};
 			};
 		};
-		class Item9
-		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={10815.624023,14.895000,9469.028320};
-					azimut=265.000000;
-					id=67;
-					side="CIV";
-					vehicle="fdf_ww2_finMan8";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.600000;
-				};
-			};
-		};
-		class Item10
+		class Item6
 		{
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					position[]={10216.611328,9.990000,2308.406982};
 					azimut=265.000000;
-					id=68;
+					id=64;
 					side="WEST";
 					vehicle="ECA_C47P";
 					leader=1;
 					skill=0.600000;
 					text="c47pilot";
 					init="c47pilot moveInDriver c47;";
+				};
+				class Item1
+				{
+					position[]={10213.561523,9.990000,2313.287109};
+					azimut=265.000000;
+					id=65;
+					side="WEST";
+					vehicle="ECA_C47P";
+					skill=0.600000;
+					text="c47coPilot";
+					init="c47coPilot moveInGunner c47;";
 				};
 			};
 			class Waypoints
@@ -516,7 +440,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={8486.691406,4.864143,2277.302002};
+					position[]={8482.111328,4.897540,2295.855713};
 					class Effects
 					{
 					};
@@ -524,7 +448,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={4370.808594,74.168976,2297.396973};
+					position[]={3951.230957,74.618980,2299.792969};
 					class Effects
 					{
 					};
@@ -532,7 +456,8 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={2436.465820,134.146744,2839.392334};
+					position[]={2449.996582,130.017975,2821.994385};
+					expActiv="[] exec ""missionStart.sqs"";";
 					class Effects
 					{
 					};
@@ -540,7 +465,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={10649.358398,1.158246,9608.427734};
+					position[]={7276.339355,1.158246,11398.412109};
 					class Effects
 					{
 					};
@@ -548,23 +473,49 @@ class Mission
 				};
 			};
 		};
-		class Item11
+		class Item7
 		{
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=4;
 				class Item0
 				{
-					position[]={10213.561523,9.990000,2313.287109};
-					azimut=265.000000;
+					position[]={10184.744141,9.990000,2313.458984};
+					id=67;
+					side="WEST";
+					vehicle="reddevOf";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+					text="paraTeamLeader";
+					init="grp=group this; ""_x moveInCargo c47"" foreach units group this;";
+				};
+				class Item1
+				{
+					position[]={10174.744141,9.990000,2308.458984};
+					id=68;
+					side="WEST";
+					vehicle="reddevsgt";
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item2
+				{
+					position[]={10194.744141,9.990000,2308.458984};
 					id=69;
 					side="WEST";
-					vehicle="ECA_C47P";
-					leader=1;
-					skill=0.600000;
-					text="c47coPilot";
-					init="c47coPilot moveInGunner c47;";
+					vehicle="reddevbatman";
+					skill=0.200000;
+				};
+				class Item3
+				{
+					position[]={10169.744141,9.990000,2308.458984};
+					id=70;
+					side="WEST";
+					vehicle="reddevlen4np";
+					skill=0.200000;
 				};
 			};
 		};
@@ -1107,7 +1058,7 @@ class Mission
 		{
 			position[]={5664.834961,48.374996,1142.473755};
 			azimut=345.000000;
-			id=60;
+			id=59;
 			side="EMPTY";
 			vehicle="SandbagWall";
 			leader=1;
@@ -1117,7 +1068,7 @@ class Mission
 		{
 			position[]={5664.892090,48.374996,1142.489502};
 			azimut=345.000000;
-			id=61;
+			id=60;
 			side="EMPTY";
 			vehicle="SandbagWall";
 			leader=1;
@@ -1128,7 +1079,7 @@ class Mission
 		{
 			position[]={3020.613281,140.804993,2487.948242};
 			azimut=15.000000;
-			id=63;
+			id=61;
 			side="EMPTY";
 			vehicle="IOE_U23";
 			skill=0.600000;
@@ -1137,7 +1088,7 @@ class Mission
 		{
 			position[]={3030.207031,140.804993,2488.788330};
 			azimut=355.000000;
-			id=64;
+			id=62;
 			side="EMPTY";
 			vehicle="IOE_Gnomerhone";
 			lock="LOCKED";
@@ -1148,7 +1099,7 @@ class Mission
 		{
 			position[]={10197.619141,9.990000,2354.802002};
 			azimut=305.000000;
-			id=70;
+			id=66;
 			side="EMPTY";
 			vehicle="mtyC47";
 			skill=0.600000;
@@ -1180,7 +1131,7 @@ class Mission
 			repeating=1;
 			type="SWITCH";
 			age="UNKNOWN";
-			expActiv="SOEAgentBike lock true; hint ""Bike is now locked."";";
+			expActiv="SOEAgentBike lock true;";
 			class Effects
 			{
 			};
@@ -1195,7 +1146,7 @@ class Mission
 			repeating=1;
 			type="SWITCH";
 			age="UNKNOWN";
-			expActiv="SOEAgentBike lock false; hint ""Bike is now unlocked."";";
+			expActiv="SOEAgentBike lock false;";
 			class Effects
 			{
 			};
@@ -1207,7 +1158,7 @@ class Mission
 			b=300.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
-			expActiv="SOEseesC47 = true; hint ""SOE has seen the C47."";";
+			expActiv="SOEseesC47 = true;";
 			class Effects
 			{
 			};
@@ -1217,6 +1168,7 @@ class Mission
 			position[]={6151.991211,76.947258,2290.178467};
 			b=1000.000000;
 			rectangular=1;
+			activationBy="WEST";
 			age="UNKNOWN";
 			expActiv="[c47] exec ""\mtyc47\EjectParaSoldiers.sqs"";";
 			class Effects
@@ -1225,9 +1177,9 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={10741.256836,2.127615,9478.599609};
-			a=300.000000;
-			b=300.000000;
+			position[]={7445.311035,1.158246,11768.881836};
+			a=1000.000000;
+			b=1000.000000;
 			activationBy="WEST";
 			age="UNKNOWN";
 			expActiv="deleteVehicle c47;";
