@@ -36,7 +36,7 @@ class Mission
 		forecastWeather=0.937619;
 		forecastFog=0.875387;
 		month=10;
-		hour=18;
+		hour=13;
 		minute=0;
 	};
 	class Groups
@@ -421,45 +421,29 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=7;
+				items=6;
 				class Item0
 				{
 					position[]={10192.910156,9.990000,2368.198730};
 					id=64;
+					type="LOAD";
 					expCond="({!(alive _x) || _x in c47} count (units paraTeam)) == count (units ParaTeam);";
 					expActiv="c47 setFuel 1;";
 					class Effects
 					{
 					};
-					timeoutMin=10.000000;
-					timeoutMid=10.000000;
-					timeoutMax=10.000000;
 					showWP="NEVER";
 				};
 				class Item1
 				{
-					position[]={10192.769531,9.990000,2368.314941};
-					expCond="fuel c47 > 0;";
-					expActiv="c47readyForDeparture = true;";
-					class Effects
-					{
-					};
-					timeoutMin=30.000000;
-					timeoutMid=30.000000;
-					timeoutMax=30.000000;
-					showWP="NEVER";
-				};
-				class Item2
-				{
 					position[]={10124.094727,8.955000,825.001221};
-					expCond="c47readyForDeparture";
 					expActiv="c47 flyInHeight 150;";
 					class Effects
 					{
 					};
 					showWP="NEVER";
 				};
-				class Item3
+				class Item2
 				{
 					position[]={8482.111328,4.897540,2295.855713};
 					class Effects
@@ -467,7 +451,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item3
 				{
 					position[]={3951.230957,74.618980,2299.792969};
 					class Effects
@@ -475,7 +459,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item5
+				class Item4
 				{
 					position[]={2449.996582,130.017975,2821.994385};
 					expActiv="[] exec ""scripts\missionStart.sqs"";";
@@ -484,7 +468,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item6
+				class Item5
 				{
 					position[]={7276.339355,1.158246,11398.412109};
 					speed="FULL";
@@ -571,7 +555,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
 					position[]={10190.567383,9.990000,2056.838623};
@@ -599,6 +583,14 @@ class Mission
 				};
 				class Item3
 				{
+					position[]={10184.636719,9.990000,2393.393066};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item4
+				{
 					position[]={10216.657227,9.990000,2383.398926};
 					type="TR UNLOAD";
 					class Effects
@@ -606,7 +598,7 @@ class Mission
 					};
 					showWP="NEVER";
 				};
-				class Item4
+				class Item5
 				{
 					position[]={10256.725586,9.990000,2377.786865};
 					class Effects
@@ -1388,7 +1380,7 @@ class Mission
 			position[]={10268.073242,10.709841,2073.822510};
 			a=10.000000;
 			b=10.000000;
-			activationBy="GOLF";
+			activationBy="ALPHA";
 			age="UNKNOWN";
 			name="trigger_callShuttleJeep";
 			expActiv="shuttleJeep setFuel 1;";
