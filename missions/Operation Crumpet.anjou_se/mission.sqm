@@ -459,7 +459,7 @@ class Mission
 				class Item4
 				{
 					position[]={2449.996582,130.017975,2821.994385};
-					expActiv="[] exec ""missionStart.sqs"";";
+					expActiv="[] exec ""scripts\missionStart.sqs"";";
 					class Effects
 					{
 					};
@@ -1319,7 +1319,7 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			name="trigger_c47cleanUp";
-			expActiv="[] exec ""c47cleanUp.sqs"";";
+			expActiv="[] exec ""scripts\c47cleanUp.sqs"";";
 			class Effects
 			{
 			};
