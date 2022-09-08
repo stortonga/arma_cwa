@@ -1,5 +1,9 @@
 {deleteVehicle _x} forEach (crew c47) + [c47];
 {deleteVehicle _x} forEach (crew shuttleJeep) + [shuttleJeep];
+deleteVehicle p51_01;
+deleteVehicle p51_02;
+deleteVehicle p51_03;
+deleteVehicle airfieldTractor;
 deleteVehicle runwayBarrel01;
 deleteVehicle runwayBarrel01;
 deleteVehicle runwayBarrel02;
