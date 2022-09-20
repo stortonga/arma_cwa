@@ -13,18 +13,19 @@ class Mission
 		"kolo",
 		"rds_air",
 		"B45gebike",
-		"awmtractor"
+		"awmtractor",
+		"NIM_Clouds"
 	};
 	addOnsAuto[]=
 	{
 		"invasion_demo",
 		"rds_air",
 		"i44_car",
+		"nim_clouds",
 		"i44_objects",
 		"EditorUpdate102",
 		"eca_uspack",
 		"rds_art",
-		"B45gebike",
 		"awmtractor"
 	};
 	randomSeed=12856323;
@@ -36,12 +37,12 @@ class Mission
 		forecastWeather=0.937619;
 		forecastFog=0.875387;
 		month=10;
-		hour=13;
+		hour=18;
 		minute=0;
 	};
 	class Groups
 	{
-		items=9;
+		items=22;
 		class Item0
 		{
 			side="EAST";
@@ -421,7 +422,7 @@ class Mission
 			};
 			class Waypoints
 			{
-				items=6;
+				items=5;
 				class Item0
 				{
 					position[]={10192.910156,9.990000,2368.198730};
@@ -463,15 +464,6 @@ class Mission
 				{
 					position[]={2449.996582,130.017975,2821.994385};
 					expActiv="[] exec ""scripts\missionStart.sqs"";";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item5
-				{
-					position[]={7276.339355,1.158246,11398.412109};
-					speed="FULL";
 					class Effects
 					{
 					};
@@ -605,6 +597,241 @@ class Mission
 					{
 					};
 					showWP="NEVER";
+				};
+			};
+		};
+		class Item9
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={2726.192139,19.889999,1403.183594};
+					azimut=180.000000;
+					id=80;
+					side="EAST";
+					vehicle="SSB_COY_CMD";
+					leader=1;
+					skill=0.600000;
+					text="ssGeneralGreif";
+				};
+			};
+		};
+		class Item10
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10266.106445,10.627806,2133.610352};
+					special="NONE";
+					id=81;
+					side="LOGIC";
+					vehicle="NIM_SeasonalWeatherAutumn";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item11
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5134.695801,111.907043,1837.876709};
+					special="NONE";
+					id=82;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item12
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5086.180664,117.187340,1963.878540};
+					special="NONE";
+					id=83;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item13
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4866.201660,88.109871,1918.514893};
+					special="NONE";
+					id=84;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item14
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5149.056641,108.916924,1679.498657};
+					special="NONE";
+					id=85;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item15
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4959.520996,94.048332,1779.975342};
+					special="NONE";
+					id=86;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item16
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4980.742188,100.083054,1896.129517};
+					special="NONE";
+					id=87;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item17
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5088.926270,112.763474,1762.980225};
+					special="NONE";
+					id=88;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item18
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5113.892090,115.282555,1921.094971};
+					special="NONE";
+					id=89;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item19
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5130.535645,110.383720,1767.141113};
+					special="NONE";
+					id=90;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item20
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5047.316895,117.735565,1862.842285};
+					special="NONE";
+					id=91;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
+				};
+			};
+		};
+		class Item21
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4989.064453,103.816505,1966.865234};
+					special="NONE";
+					id=92;
+					side="LOGIC";
+					vehicle="NIM_FirestLeafBig";
+					leader=1;
+					skill=0.466667;
 				};
 			};
 		};
@@ -1179,7 +1406,7 @@ class Mission
 			azimut=355.000000;
 			id=62;
 			side="EMPTY";
-			vehicle="B45gebikeCIV";
+			vehicle="IOE_Gnomerhone";
 			lock="LOCKED";
 			skill=0.600000;
 			text="SOEAgentBike";
@@ -1364,7 +1591,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={7445.311035,1.158246,11768.881836};
+			position[]={1636.509155,60.443058,3032.378662};
 			a=1000.000000;
 			b=1000.000000;
 			activationBy="WEST";
