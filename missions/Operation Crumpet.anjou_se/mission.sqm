@@ -19,13 +19,13 @@ class Mission
 	addOnsAuto[]=
 	{
 		"invasion_demo",
-		"rds_air",
-		"i44_car",
 		"nim_clouds",
+		"I44_Car",
 		"i44_objects",
 		"EditorUpdate102",
 		"eca_uspack",
 		"rds_art",
+		"rds_air",
 		"awmtractor"
 	};
 	randomSeed=12856323;
@@ -407,38 +407,53 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
-					position[]={10192.910156,9.990000,2368.198730};
+					position[]={10199.720703,9.990000,2365.910156};
+					azimut=195.000000;
+					special="NONE";
 					id=64;
 					side="WEST";
-					vehicle="mtyC47";
+					vehicle="ECA_C47P";
 					leader=1;
 					skill=0.600000;
-					text="c47";
-					init="c47 setFuel 0;";
+					text="c47pilot";
+				};
+				class Item1
+				{
+					position[]={10203.074219,9.990000,2362.040039};
+					azimut=210.000000;
+					special="NONE";
+					id=95;
+					side="WEST";
+					vehicle="ECA_C47P";
+					skill=0.600000;
+					text="c47coPilot";
 				};
 			};
 			class Waypoints
 			{
-				items=5;
+				items=6;
 				class Item0
 				{
-					position[]={10192.910156,9.990000,2368.198730};
+					position[]={10199.720703,9.990000,2365.910156};
 					id=64;
-					type="LOAD";
-					expCond="({!(alive _x) || _x in c47} count (units paraTeam)) == count (units ParaTeam);";
-					expActiv="c47 setFuel 1;";
+					expCond="({!(alive _x) || _x in c47} count (units paraTeam)) == count (units ParaTeam)";
+					expActiv="shuttleJeep stop false;";
 					class Effects
 					{
 					};
+					timeoutMin=2.000000;
+					timeoutMid=7.000000;
+					timeoutMax=12.000000;
 					showWP="NEVER";
 				};
 				class Item1
 				{
-					position[]={10124.094727,8.955000,825.001221};
-					expActiv="c47 flyInHeight 150;";
+					position[]={10194.829102,9.990000,2367.295410};
+					id=94;
+					type="GETIN";
 					class Effects
 					{
 					};
@@ -446,7 +461,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={8482.111328,4.897540,2295.855713};
+					position[]={10131.046875,8.955000,826.698608};
+					expActiv="c47 flyInHeight 150;";
 					class Effects
 					{
 					};
@@ -454,7 +470,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={3951.230957,74.618980,2299.792969};
+					position[]={8489.089844,4.900649,2297.583008};
 					class Effects
 					{
 					};
@@ -462,7 +478,15 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={2449.996582,130.017975,2821.994385};
+					position[]={3958.196289,74.477104,2301.603760};
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item5
+				{
+					position[]={2456.977539,129.243576,2823.832764};
 					expActiv="[] exec ""scripts\missionStart.sqs"";";
 					class Effects
 					{
@@ -502,6 +526,7 @@ class Mission
 					vehicle="reddevsgt";
 					rank="SERGEANT";
 					skill=0.466667;
+					text="paraTeamMember02";
 				};
 				class Item2
 				{
@@ -512,6 +537,7 @@ class Mission
 					side="WEST";
 					vehicle="reddevbatman";
 					skill=0.200000;
+					text="paraTeamMember03";
 				};
 				class Item3
 				{
@@ -522,6 +548,7 @@ class Mission
 					side="WEST";
 					vehicle="reddevlen4np";
 					skill=0.200000;
+					text="paraTeamMember01";
 				};
 			};
 		};
@@ -538,19 +565,21 @@ class Mission
 					special="NONE";
 					id=75;
 					side="WEST";
-					vehicle="inv_willysmbArmy";
+					vehicle="EC_US1st_infdriver";
 					leader=1;
 					skill=0.466667;
-					text="shuttleJeep";
-					init="shuttleJeep setFuel 0;";
+					text="shuttleJeepDriver";
 				};
 			};
 			class Waypoints
 			{
-				items=6;
+				items=7;
 				class Item0
 				{
-					position[]={10190.567383,9.990000,2056.838623};
+					position[]={10254.000000,9.990000,2387.934326};
+					id=75;
+					expCond="callShuttleJeep";
+					expActiv="[shuttleJeepDriver] allowGetIn true; [shuttleJeepDriver] orderGetIn true;";
 					class Effects
 					{
 					};
@@ -558,8 +587,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={10191.423828,9.990000,2058.577881};
-					expCond="({!(alive _x) || _x in shuttleJeep} count (units paraTeam)) == count (units ParaTeam);";
+					position[]={10190.567383,9.990000,2056.838623};
 					class Effects
 					{
 					};
@@ -567,7 +595,8 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={10182.018555,9.678337,2423.352783};
+					position[]={10191.423828,9.990000,2058.577881};
+					expCond="({!(alive _x) || _x in shuttleJeep} count (units paraTeam)) == count (units ParaTeam)";
 					class Effects
 					{
 					};
@@ -575,7 +604,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={10184.636719,9.990000,2393.393066};
+					position[]={10182.018555,9.678337,2423.352783};
 					class Effects
 					{
 					};
@@ -583,8 +612,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={10216.657227,9.990000,2383.398926};
-					type="TR UNLOAD";
+					position[]={10182.621094,9.990000,2395.540039};
 					class Effects
 					{
 					};
@@ -592,7 +620,20 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={10256.725586,9.990000,2377.786865};
+					position[]={10200.912109,9.990000,2359.208496};
+					type="TR UNLOAD";
+					speed="LIMITED";
+					expActiv="shuttleJeep stop true; paraTeamLeader action [""Eject"", vehicle paraTeamLeader]; paraTeamMember01 action [""Eject"", vehicle paraTeamMember01]; paraTeamMember02 action [""Eject"", vehicle paraTeamMember02]; paraTeamMember03 action [""Eject"", vehicle paraTeamMember03];";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+				class Item6
+				{
+					position[]={10219.957031,9.990000,2274.063232};
+					type="GETOUT";
+					speed="LIMITED";
 					class Effects
 					{
 					};
@@ -838,7 +879,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=68;
+		items=70;
 		class Item0
 		{
 			position[]={5657.757813,48.374996,1129.995972};
@@ -1517,10 +1558,34 @@ class Mission
 			skill=0.600000;
 			text="airfieldTractor";
 		};
+		class Item68
+		{
+			position[]={10252.053711,9.990000,2387.845703};
+			azimut=180.000000;
+			special="NONE";
+			id=93;
+			side="EMPTY";
+			vehicle="inv_willysmbArmy";
+			leader=1;
+			skill=0.466667;
+			text="shuttleJeep";
+		};
+		class Item69
+		{
+			position[]={10194.829102,9.990000,2367.295410};
+			azimut=270.000000;
+			special="NONE";
+			id=94;
+			side="EMPTY";
+			vehicle="mtyC47";
+			leader=1;
+			skill=0.600000;
+			text="c47";
+		};
 	};
 	class Sensors
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			position[]={5626.891113,48.512150,1162.281494};
@@ -1610,7 +1675,20 @@ class Mission
 			activationBy="ALPHA";
 			age="UNKNOWN";
 			name="trigger_callShuttleJeep";
-			expActiv="shuttleJeep setFuel 1;";
+			expActiv="callShuttleJeep = true;";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={10209.901367,10.040000,2284.927002};
+			a=30.000000;
+			b=30.000000;
+			rectangular=1;
+			activationBy="WEST";
+			age="UNKNOWN";
+			name="trigger_c47releaseParkingBrake";
 			class Effects
 			{
 			};
