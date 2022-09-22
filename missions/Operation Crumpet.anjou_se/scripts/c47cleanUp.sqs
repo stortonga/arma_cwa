@@ -14,6 +14,7 @@ deleteVehicle runwayBarrel06;
 deleteVehicle trigger_callShuttleJeep;
 deleteVehicle trigger_c47releaseParkingBrake;
 deleteVehicle trigger_c47paraDrop;
+deleteVehicle trigger_noAmmoCanister;
 deleteVehicle trigger_c47cleanUp;
 
 hint "Debug INFO: c47cleanUp.sqs executed";

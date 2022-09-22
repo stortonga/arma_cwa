@@ -25,6 +25,7 @@ class Mission
 		"EditorUpdate102",
 		"eca_uspack",
 		"rds_art",
+		"B45gebike",
 		"rds_air",
 		"awmtractor"
 	};
@@ -327,25 +328,27 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3025.635986,140.804993,2488.877930};
+					position[]={5389.489258,78.202332,1836.348145};
+					azimut=447.164337;
+					special="NONE";
 					id=63;
 					side="CIV";
 					vehicle="fdf_ww2_finMan6";
 					leader=1;
 					skill=0.600000;
 					text="SOEAgent";
-					init="SOEAgent moveInDriver SOEAgentBike;";
 				};
 			};
 			class Waypoints
 			{
-				items=6;
+				items=3;
 				class Item0
 				{
-					position[]={3025.635986,140.804993,2488.877930};
+					position[]={5389.489258,78.202332,1836.348145};
 					id=63;
+					speed="LIMITED";
 					combat="SAFE";
-					expCond="SOEseesC47";
+					expCond="paraTeam_nearRVpoint";
 					class Effects
 					{
 					};
@@ -353,8 +356,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={5334.045410,105.260513,2538.575195};
-					speed="FULL";
+					position[]={5387.048828,78.213135,1838.184937};
 					class Effects
 					{
 					};
@@ -362,38 +364,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={5590.898438,71.465469,1855.163574};
-					speed="NORMAL";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item3
-				{
-					position[]={5382.052734,78.565376,1854.573364};
-					speed="LIMITED";
-					combat="STEALTH";
-					expActiv="SOEAgentBike action [""LIGHT OFF""];";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item4
-				{
-					position[]={5381.729980,78.615662,1849.821045};
-					type="GETOUT";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-				};
-				class Item5
-				{
-					position[]={5382.381836,78.576538,1840.091553};
-					speed="LIMITED";
-					combat="SAFE";
+					position[]={5383.461914,78.492706,1838.191528};
 					expActiv="SOEAgent DoMove GetPos paraTeamLeader;";
 					class Effects
 					{
@@ -410,8 +381,8 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={10199.720703,9.990000,2365.910156};
-					azimut=195.000000;
+					position[]={10187.028320,9.990000,2371.780273};
+					azimut=194.931000;
 					special="NONE";
 					id=64;
 					side="WEST";
@@ -419,17 +390,19 @@ class Mission
 					leader=1;
 					skill=0.600000;
 					text="c47pilot";
+					init="c47crew = group this;";
 				};
 				class Item1
 				{
-					position[]={10203.074219,9.990000,2362.040039};
-					azimut=210.000000;
+					position[]={10176.986328,9.990000,2362.193115};
+					azimut=20.000000;
 					special="NONE";
 					id=95;
 					side="WEST";
 					vehicle="ECA_C47P";
 					skill=0.600000;
 					text="c47coPilot";
+					init="c47coPilot stop true; c47coPilot doWatch c47;";
 				};
 			};
 			class Waypoints
@@ -437,10 +410,10 @@ class Mission
 				items=6;
 				class Item0
 				{
-					position[]={10199.720703,9.990000,2365.910156};
+					position[]={10187.028320,9.990000,2371.780273};
 					id=64;
 					expCond="({!(alive _x) || _x in c47} count (units paraTeam)) == count (units ParaTeam)";
-					expActiv="shuttleJeep stop false;";
+					expActiv="shuttleJeep stop false; c47coPilot doWatch objNull; c47coPilot stop false;";
 					class Effects
 					{
 					};
@@ -451,7 +424,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={10194.829102,9.990000,2367.295410};
+					position[]={10182.324219,9.990000,2370.781494};
 					id=94;
 					type="GETIN";
 					class Effects
@@ -461,7 +434,7 @@ class Mission
 				};
 				class Item2
 				{
-					position[]={10131.046875,8.955000,826.698608};
+					position[]={10132.719727,8.955000,829.001099};
 					expActiv="c47 flyInHeight 150;";
 					class Effects
 					{
@@ -470,7 +443,7 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={8489.089844,4.900649,2297.583008};
+					position[]={8488.987305,4.901217,2297.898438};
 					class Effects
 					{
 					};
@@ -478,7 +451,7 @@ class Mission
 				};
 				class Item4
 				{
-					position[]={3958.196289,74.477104,2301.603760};
+					position[]={3958.091797,74.385719,2296.435791};
 					class Effects
 					{
 					};
@@ -486,7 +459,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={2456.977539,129.243576,2823.832764};
+					position[]={2456.242188,128.492020,2816.846680};
 					expActiv="[] exec ""scripts\missionStart.sqs"";";
 					class Effects
 					{
@@ -583,6 +556,9 @@ class Mission
 					class Effects
 					{
 					};
+					timeoutMin=20.000000;
+					timeoutMid=30.000000;
+					timeoutMax=40.000000;
 					showWP="NEVER";
 				};
 				class Item1
@@ -620,7 +596,7 @@ class Mission
 				};
 				class Item5
 				{
-					position[]={10200.912109,9.990000,2359.208496};
+					position[]={10193.672852,9.990000,2365.327637};
 					type="TR UNLOAD";
 					speed="LIMITED";
 					expActiv="shuttleJeep stop true; paraTeamLeader action [""Eject"", vehicle paraTeamLeader]; paraTeamMember01 action [""Eject"", vehicle paraTeamMember01]; paraTeamMember02 action [""Eject"", vehicle paraTeamMember02]; paraTeamMember03 action [""Eject"", vehicle paraTeamMember03];";
@@ -1443,11 +1419,11 @@ class Mission
 		};
 		class Item57
 		{
-			position[]={3030.207031,140.804993,2488.788330};
-			azimut=355.000000;
+			position[]={5389.311035,78.026703,1839.712524};
+			azimut=270.827332;
 			id=62;
 			side="EMPTY";
-			vehicle="IOE_Gnomerhone";
+			vehicle="B45gebikeCIV";
 			lock="LOCKED";
 			skill=0.600000;
 			text="SOEAgentBike";
@@ -1572,8 +1548,8 @@ class Mission
 		};
 		class Item69
 		{
-			position[]={10194.829102,9.990000,2367.295410};
-			azimut=270.000000;
+			position[]={10182.324219,9.990000,2370.781494};
+			azimut=240.000000;
 			special="NONE";
 			id=94;
 			side="EMPTY";
@@ -1585,7 +1561,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			position[]={5626.891113,48.512150,1162.281494};
@@ -1601,48 +1577,6 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={3027.156250,140.804993,2490.683350};
-			a=10.000000;
-			b=10.000000;
-			activationBy="CIV";
-			repeating=1;
-			type="SWITCH";
-			age="UNKNOWN";
-			expActiv="SOEAgentBike lock true;";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={5383.550781,78.421898,1859.386597};
-			a=10.000000;
-			b=10.000000;
-			rectangular=1;
-			activationBy="CIV";
-			repeating=1;
-			type="SWITCH";
-			age="UNKNOWN";
-			expActiv="SOEAgentBike lock false;";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={3011.599854,145.466705,2661.842529};
-			a=300.000000;
-			b=300.000000;
-			activationBy="WEST";
-			age="UNKNOWN";
-			name="trigger_c47visual";
-			expActiv="SOEseesC47 = true; hint ""Debug INFO: trigger_c47visual activated, SOE Agent is now on his way to the meeting point."";";
-			class Effects
-			{
-			};
-		};
-		class Item4
-		{
 			position[]={6151.991211,76.947258,2290.178467};
 			b=1000.000000;
 			rectangular=1;
@@ -1654,7 +1588,7 @@ class Mission
 			{
 			};
 		};
-		class Item5
+		class Item2
 		{
 			position[]={1636.509155,60.443058,3032.378662};
 			a=1000.000000;
@@ -1667,7 +1601,7 @@ class Mission
 			{
 			};
 		};
-		class Item6
+		class Item3
 		{
 			position[]={10268.073242,10.709841,2073.822510};
 			a=10.000000;
@@ -1680,7 +1614,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item4
 		{
 			position[]={10209.901367,10.040000,2284.927002};
 			a=30.000000;
@@ -1689,6 +1623,31 @@ class Mission
 			activationBy="WEST";
 			age="UNKNOWN";
 			name="trigger_c47releaseParkingBrake";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={5389.747559,78.107376,1835.828369};
+			a=20.000000;
+			b=20.000000;
+			activationBy="WEST";
+			age="UNKNOWN";
+			expActiv="paraTeam_nearRVpoint = true;";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={4352.259766,74.343575,2300.251465};
+			b=1000.000000;
+			rectangular=1;
+			activationBy="WEST";
+			age="UNKNOWN";
+			name="trigger_noAmmoCanister";
+			expActiv="player sideChat ""Weren't they supposed to drop an ammo canister with explosives? Shit..."";";
 			class Effects
 			{
 			};
