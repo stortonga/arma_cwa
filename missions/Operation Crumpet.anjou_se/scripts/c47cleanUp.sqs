@@ -1,9 +1,7 @@
-{deleteVehicle _x} forEach (crew c47) + [c47];
-{deleteVehicle _x} forEach (crew shuttleJeep) + [shuttleJeep];
-deleteVehicle p51_01;
-deleteVehicle p51_02;
-deleteVehicle p51_03;
-deleteVehicle airfieldTractor;
+deleteVehicle c47;
+deleteVehicle c47pilot;
+deleteVehicle c47coPilot;
+deleteVehicle c47marshaller;
 deleteVehicle runwayBarrel01;
 deleteVehicle runwayBarrel01;
 deleteVehicle runwayBarrel02;
@@ -11,10 +9,7 @@ deleteVehicle runwayBarrel03;
 deleteVehicle runwayBarrel04;
 deleteVehicle runwayBarrel05;
 deleteVehicle runwayBarrel06;
-deleteVehicle trigger_callShuttleJeep;
-deleteVehicle trigger_c47releaseParkingBrake;
 deleteVehicle trigger_c47paraDrop;
-deleteVehicle trigger_noAmmoCanister;
 deleteVehicle trigger_c47cleanUp;
 
 hint "Debug INFO: c47cleanUp.sqs executed";

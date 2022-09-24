@@ -1,21 +1,3 @@
-; Assign and set up the C47 crew
-c47pilot assignAsDriver c47;
-c47pilot setBehaviour "careless";
-c47coPilot assignAsGunner c47;
-c47coPilot setBehaviour "careless";
-
-; Assign and set up the airport shuttle driver
-shuttleJeepDriver assignAsDriver shuttleJeep;
-[shuttleJeepDriver] allowGetIn false;
-shuttleJeepDriver setBehaviour "careless";
-
-; Assign and set up the Para Team
-paraTeam setFormation "column";
-paraTeamLeader assignAsCargo c47;
-paraTeamMember01 assignAsCargo c47;
-paraTeamMember02 assignAsCargo c47;
-paraTeamMember03 assignAsCargo c47;
-
 ; Make sure no one gets alerted too early by the c47 and the paradrop...
 villersSSpatrolN1 setBehaviour "careless";
 villersSSpatrolN1 setSpeedMode "limited";
