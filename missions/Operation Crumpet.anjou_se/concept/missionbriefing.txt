@@ -6,11 +6,11 @@ Mission Briefing
 ----------------------------------------
 October 10, 1943. With several covert operations underway in order to disrupt the enemys' organisation and their supply lines along the Western Front, a number of small detatchments of the British Army's 1st Airborne Division have jumped deep into occupied France.
 
-Your section has been tasked to eliminate SS General Reinhard Greif, the Nazi's head of operations in the western and north western regions of France.
+Your section has been tasked to eliminate General Reinhard Greif, the Nazi's head of SS operations in the western and north western regions of France.
 
 Our American allies have agreed to provide the means of transportation on your ingress route to the target area. A C-47 will therefore take off from the frontline airstrip north of Meaux by 1715 and take you to the dropzone marked on the map handed out to you earlier today.
 
-Over the last months, a SOE agent has been operating in the area to gather information about enemy positions, activities and habits that would facilitate subversive actions from our side.
+Over the last months, a SOE agent has been operating in the area to gather information about enemy positions, activities and habits that would facilitate subversive actions from our side. Your team is scheduled to rendezvous with the informant not later than 0000Z at a small shed located within map quadrant Ec85. Approach the site with utmost caution in order not to compromise the informant's position.
 
 
 
@@ -19,7 +19,7 @@ Ec85 - small house, meet informant
 Château Gontier - Ca88 - Cc90
 
 
-Playable Units
+Playable Characters
 ----------------------------------------
 1: 
 2: 
