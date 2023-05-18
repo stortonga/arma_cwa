@@ -755,8 +755,8 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={10234.407227,10.173874,2318.064941};
-					azimut=155.000000;
+					position[]={10220.391602,9.990000,2290.980225};
+					azimut=350.000000;
 					special="NONE";
 					id=87;
 					side="WEST";
@@ -770,35 +770,38 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={10236.436523,10.173874,2317.052979};
-					azimut=300.000000;
+					position[]={10224.532227,9.990000,2299.416504};
+					azimut=190.000000;
 					special="NONE";
 					id=88;
 					side="WEST";
 					vehicle="reddevsgt";
+					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.466667;
 					text="paraTeamMember02";
 				};
 				class Item2
 				{
-					position[]={10235.929688,10.173874,2316.393555};
+					position[]={10224.750977,9.990000,2296.166016};
 					azimut=335.000000;
 					special="NONE";
 					id=90;
 					side="WEST";
 					vehicle="reddevlen4np";
+					player="PLAY CDG";
 					skill=0.200000;
 					text="paraTeamMember01";
 				};
 				class Item3
 				{
-					position[]={10236.719727,10.173874,2317.695313};
-					azimut=285.000000;
+					position[]={10225.262695,9.990000,2297.914795};
+					azimut=210.000000;
 					special="NONE";
 					id=89;
 					side="WEST";
 					vehicle="reddevbatman";
+					player="PLAY CDG";
 					skill=0.200000;
 					text="paraTeamMember03";
 				};
@@ -807,7 +810,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=69;
+		items=65;
 		class Item0
 		{
 			position[]={5657.757813,48.374996,1129.995972};
@@ -1454,50 +1457,6 @@ class Mission
 			vehicle="mtyC47";
 			skill=0.600000;
 			text="c47";
-		};
-		class Item65
-		{
-			position[]={10224.954102,9.990000,2331.679443};
-			azimut=315.000000;
-			special="NONE";
-			id=91;
-			side="EMPTY";
-			vehicle="AEF_NostW";
-			skill=0.200000;
-			init="this inflame true; this setpos [(getpos this select 0),(getpos this select 1),6];";
-		};
-		class Item66
-		{
-			position[]={10226.866211,9.990000,2301.505859};
-			azimut=215.000000;
-			special="NONE";
-			id=92;
-			side="EMPTY";
-			vehicle="AEF_NostW";
-			skill=0.200000;
-			init="this inflame true; this setpos [(getpos this select 0),(getpos this select 1),6];";
-		};
-		class Item67
-		{
-			position[]={10248.816406,9.990000,2302.844727};
-			azimut=135.000000;
-			special="NONE";
-			id=93;
-			side="EMPTY";
-			vehicle="AEF_NostW";
-			skill=0.200000;
-			init="this inflame true; this setpos [(getpos this select 0),(getpos this select 1),6];";
-		};
-		class Item68
-		{
-			position[]={10247.465820,10.173874,2332.017090};
-			azimut=45.000000;
-			special="NONE";
-			id=94;
-			side="EMPTY";
-			vehicle="AEF_NostW";
-			skill=0.200000;
-			init="this inflame true; this setpos [(getpos this select 0),(getpos this select 1),6];";
 		};
 	};
 	class Sensors
