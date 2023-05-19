@@ -35,7 +35,6 @@ Playable Characters
     Equipment:  ?
 
 
-
 3: Pioneer
     Name:       ?
     Skill:      Explosives
