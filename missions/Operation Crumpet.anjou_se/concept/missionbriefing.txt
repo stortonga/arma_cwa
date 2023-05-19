@@ -2,15 +2,17 @@
 |          Operation Crumpet           |
 ----------------------------------------
 
+Date: Thursday, May 17th, 1944
+
 Mission Briefing
 ----------------------------------------
-May 17, 1944. With several covert operations underway in order to disrupt Nazi Germany's organisation and supply lines along the Western Front in preparation for Operation Overlord, a number of small detatchments of the British Army's 1st Airborne Division have jumped deep into occupied France.
+With several covert operations underway in order to disrupt Nazi Germany's organisation and supply lines along the Western Front in preparation for Operation Overlord, a number of small detatchments of the British Army's 1st Airborne Division are about to jump deep into occupied France.
 
-Your section has been tasked to eliminate General Reinhard Greif, the Nazi's head of SS operations in the western and north western regions of France.
+Your section is tasked to eliminate General Reinhard Greif, the Nazi's head of SS operations in the north western region of France. Greif is known for his very calculating character and feared for his sadistic behaviour - towards women and children in particular. Hopes are to finally end this tyranny for the civil population and to weaken the enemy's chains of command.
 
-Our American allies have agreed to provide the means of transportation on your ingress route to the target area. A C-47 will therefore take off from the frontline airstrip north of Meaux by 1715 and take you to the dropzone marked on the map handed out to you earlier today.
+Our American allies have agreed to provide the means of transportation on your ingress route to the target area. A C-47 will therefore take off from the frontline airstrip north of Meaux by 1700Z and take you to the dropzone marked on the map handed out to you earlier today.
 
-Over the last months, a SOE agent has been operating in the area to gather information about enemy positions, activities and habits that would facilitate subversive actions from our side. Your team is scheduled to rendezvous with the informant not later than [0000Z] at a small shed located within map quadrant [Ec85]. Approach the site with utmost caution in order not to compromise the informant's position. With a strict curfiew in place between [0000Z] and [0000Z] for all civilians, he will be risking his life just by being outside, let alone making contact with you.
+Over the last months, a SOE agent has been operating in the area to gather information about enemy positions, activities and habits that would facilitate subversive actions from our side. Your team is scheduled to rendezvous with the informant not later than [1730Z] at a small shed located within map quadrant [Ec85]. Approach the site with utmost caution in order not to compromise the informant's position. With a strict curfiew in place between [1600Z] and [0600Z] for all civilians, he will be risking his life just by being outside, let alone making contact with you.
 
 The informant will provide your team with then current information regarding your target's location and possible enemy positions that he is aware of at the time. Make sure to take these into consideration while planning your next actions in the field.
 
@@ -21,10 +23,27 @@ Château Gontier - Ca88 - Cc90
 
 Playable Characters
 ----------------------------------------
-1: 
-2: 
-3: 
-4: 
+1: Team Lead
+    Name:           Alistair McMurdoch
+    Skill:          Communications
+    Primary Weapon: Sten Mark ?
+
+
+2: Scout
+    Name:           ?
+    Skill:          Marksmanship
+    Primary Weapon: ?
+
+
+
+3: Pioneer
+    Name:   
+    Skill:  Explosives
+
+
+4: Medic
+    Name:   
+    Skill:  
 
 
 Credits
