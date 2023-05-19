@@ -24,26 +24,28 @@ Château Gontier - Ca88 - Cc90
 Playable Characters
 ----------------------------------------
 1: Team Lead
-    Name:           Alistair McMurdoch
-    Skill:          Communications
-    Primary Weapon: Sten Mark ?
+    Name:       Alistair McMurdoch
+    Skill:      Communications
+    Equipment:  Sten Mark ?
 
 
 2: Scout
-    Name:           ?
-    Skill:          Marksmanship
-    Primary Weapon: ?
+    Name:       ?
+    Skill:      Marksmanship
+    Equipment:  ?
 
 
 
 3: Pioneer
-    Name:   
-    Skill:  Explosives
+    Name:       ?
+    Skill:      Explosives
+    Equipment:  ?
 
 
 4: Medic
-    Name:   
-    Skill:  
+    Name:       ?
+    Skill:      Medical Support
+    Equipment:  ?
 
 
 Credits
