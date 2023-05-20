@@ -25,24 +25,32 @@ Playable Characters
 ----------------------------------------
 1: Team Lead
     Name:       Alistair McMurdoch
+    Age:        
+    Origin:     
     Skills:     Leadership, Communications
     Equipment:  Sten Mark ?
 
 
 2: Scout
     Name:       ?
+    Age:        
+    Origin:     
     Skills:     Camouflage, Marksmanship
     Equipment:  ?
 
 
 3: Pioneer
     Name:       ?
+    Age:        
+    Origin:     
     Skills:     Explosives, Demolition
     Equipment:  ?
 
 
 4: Medic
     Name:       ?
+    Age:        
+    Origin:     
     Skills:     Combat Medicine
     Equipment:  ?
 
