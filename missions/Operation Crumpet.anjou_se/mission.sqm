@@ -1261,6 +1261,32 @@ class Mission
 			text="c47";
 		};
 	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={5006.623047,97.425858,2349.045654};
+			name="Drop Zone";
+			type="I44_Act_Landing_AB";
+			colorName="ColorRed";
+			a=1.500000;
+			b=1.500000;
+		};
+		class Item1
+		{
+			position[]={5389.837402,78.202332,1835.431030};
+			name="Informant";
+			type="Flag";
+		};
+		class Item2
+		{
+			position[]={3042.623291,140.804993,2485.780029};
+			name="Escape Point";
+			type="End";
+			colorName="ColorGreen";
+		};
+	};
 	class Sensors
 	{
 		items=4;
