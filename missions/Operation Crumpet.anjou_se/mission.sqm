@@ -6,7 +6,6 @@ class Mission
 		"invasion_demo",
 		"I44_Car",
 		"i44_objects",
-		"jc_panzer4",
 		"EditorUpdate102",
 		"eca_uspack",
 		"rds_art",
@@ -14,13 +13,15 @@ class Mission
 		"rds_air",
 		"B45gebike",
 		"NIM_Clouds",
-		"bis_weaponpack"
+		"bis_weaponpack",
+		"jc_panzer4"
 	};
 	addOnsAuto[]=
 	{
 		"invasion_demo",
 		"nim_clouds",
 		"I44_Car",
+		"jc_panzer4",
 		"i44_objects",
 		"EditorUpdate102",
 		"eca_uspack",
@@ -42,7 +43,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=11;
+		items=14;
 		class Item0
 		{
 			side="EAST";
@@ -403,7 +404,7 @@ class Mission
 					special="NONE";
 					id=71;
 					side="LOGIC";
-					vehicle="NIM_SeasonalWeatherSpring";
+					vehicle="NIM_SeasonalWeatherAutumn";
 					leader=1;
 					skill=0.600000;
 				};
@@ -609,10 +610,144 @@ class Mission
 				};
 			};
 		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10038.715820,10.430845,1588.554199};
+					azimut=45.000000;
+					id=80;
+					side="WEST";
+					vehicle="GST_chevG7107medic";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_medictruck_01";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10069.974609,9.990000,2336.047119};
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10227.546875,9.990000,1703.012329};
+					azimut=265.000000;
+					id=87;
+					side="WEST";
+					vehicle="inv_willysmbArmy";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_jeep_01";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10068.257813,9.990000,2387.027588};
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={9435.148438,10.934999,2370.425293};
+					azimut=175.000000;
+					id=91;
+					side="WEST";
+					vehicle="StM_M4A3_76";
+					leader=1;
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_sherman_01";
+				};
+				class Item1
+				{
+					position[]={9419.572266,10.934999,2365.752441};
+					azimut=175.000000;
+					id=92;
+					side="WEST";
+					vehicle="StM_M4A3_76";
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_sherman_03";
+				};
+				class Item2
+				{
+					position[]={9456.955078,10.934999,2379.770996};
+					azimut=175.000000;
+					id=93;
+					side="WEST";
+					vehicle="StM_M4A3_76";
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_sherman_02";
+				};
+				class Item3
+				{
+					position[]={9425.802734,10.934999,2387.559082};
+					azimut=175.000000;
+					id=94;
+					side="WEST";
+					vehicle="StM_M4A3_76";
+					lock="LOCKED";
+					skill=0.600000;
+					text="props_sherman_04";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10169.350586,8.955000,812.625183};
+					formation="COLUMN";
+					combat="SAFE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
-		items=65;
+		items=74;
 		class Item0
 		{
 			position[]={5657.757813,48.374996,1129.995972};
@@ -1193,7 +1328,7 @@ class Mission
 			vehicle="bbbf";
 			leader=1;
 			skill=0.600000;
-			text="runwayBarrel03";
+			text="runwayBarrel05";
 			init="this inflame true;";
 		};
 		class Item59
@@ -1204,7 +1339,7 @@ class Mission
 			vehicle="bbbf";
 			leader=1;
 			skill=0.600000;
-			text="runwayBarrel04";
+			text="runwayBarrel06";
 			init="this inflame true;";
 		};
 		class Item60
@@ -1237,7 +1372,7 @@ class Mission
 			vehicle="bbbf";
 			leader=1;
 			skill=0.600000;
-			text="runwayBarrel06";
+			text="runwayBarrel10";
 			init="this inflame true;";
 		};
 		class Item63
@@ -1248,7 +1383,7 @@ class Mission
 			vehicle="bbbf";
 			leader=1;
 			skill=0.600000;
-			text="runwayBarrel05";
+			text="runwayBarrel09";
 			init="this inflame true;";
 		};
 		class Item64
@@ -1256,9 +1391,110 @@ class Mission
 			position[]={10194.345703,9.990000,2361.846924};
 			id=72;
 			side="EMPTY";
-			vehicle="mtyC47";
+			vehicle="MTYC47DDAY";
 			skill=0.600000;
 			text="c47";
+		};
+		class Item65
+		{
+			position[]={10098.125977,9.990000,2174.565186};
+			id=81;
+			side="EMPTY";
+			vehicle="bbbf";
+			leader=1;
+			skill=0.600000;
+			text="runwayBarrel03";
+			init="this inflame true;";
+		};
+		class Item66
+		{
+			position[]={10150.899414,9.990000,2174.934082};
+			id=82;
+			side="EMPTY";
+			vehicle="bbbf";
+			leader=1;
+			skill=0.600000;
+			text="runwayBarrel04";
+			init="this inflame true;";
+		};
+		class Item67
+		{
+			position[]={10098.126953,9.990000,1772.397217};
+			id=83;
+			side="EMPTY";
+			vehicle="bbbf";
+			leader=1;
+			skill=0.600000;
+			text="runwayBarrel07";
+			init="this inflame true;";
+		};
+		class Item68
+		{
+			position[]={10150.900391,9.990000,1772.766113};
+			id=84;
+			side="EMPTY";
+			vehicle="bbbf";
+			leader=1;
+			skill=0.600000;
+			text="runwayBarrel08";
+			init="this inflame true;";
+		};
+		class Item69
+		{
+			position[]={10051.106445,9.990000,2362.547119};
+			azimut=55.000000;
+			id=85;
+			side="EMPTY";
+			vehicle="MTYC47DDAY_ai";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			text="props_c47_01";
+		};
+		class Item70
+		{
+			position[]={10049.861328,9.990000,2322.537354};
+			azimut=45.000000;
+			id=86;
+			side="EMPTY";
+			vehicle="MTYC47DDAY_ai";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			text="props_c47_02";
+		};
+		class Item71
+		{
+			position[]={10186.405273,9.990000,2284.709961};
+			id=88;
+			side="EMPTY";
+			vehicle="AIA_P51EM_ST";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			text="props_p51_01";
+		};
+		class Item72
+		{
+			position[]={10166.022461,9.990000,2258.315674};
+			id=89;
+			side="EMPTY";
+			vehicle="AIA_P51EM";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			text="props_p51_02";
+		};
+		class Item73
+		{
+			position[]={10186.333008,9.990000,2258.349854};
+			id=90;
+			side="EMPTY";
+			vehicle="scud_P38dday";
+			leader=1;
+			lock="LOCKED";
+			skill=0.600000;
+			text="props_p38_02";
 		};
 	};
 	class Sensors
