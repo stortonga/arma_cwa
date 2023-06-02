@@ -1497,6 +1497,21 @@ class Mission
 			text="props_p38_02";
 		};
 	};
+	class Markers
+	{
+		items=1;
+		class Item0
+		{
+			position[]={5440.008301,72.699738,1856.268311};
+			name="Ec85";
+			text="Shed";
+			markerType="RECTANGLE";
+			type="Flag";
+			colorName="ColorGreen";
+			a=64.000000;
+			b=64.000000;
+		};
+	};
 	class Sensors
 	{
 		items=4;
